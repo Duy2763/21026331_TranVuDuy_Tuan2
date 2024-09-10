@@ -1,7 +1,9 @@
+import { useRoute } from '@react-navigation/native';
 import { StyleSheet, View, Text } from 'react-native';
 
 
-export default function Result({ route }) {
+export default function Result() {
+    const route = useRoute();
     const {result} = route.params;
     return  (
         <View style={styles.container}>

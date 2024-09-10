@@ -13,8 +13,10 @@ import {
 } from "react-native";
 import { StatusBar } from 'expo-status-bar';
 import img from '../assets/img.png'
+import { useNavigation } from "@react-navigation/native";
 
-export default function HomeContent({ navigation }) {
+export default function HomeContent() {
+    const navigation = useNavigation();
     const [valueA, setValueA] = useState(0);
     const [valueB, setValueB] = useState(0);
     const [valueC, setValueC] = useState(0);
