@@ -31,7 +31,6 @@ export default function HomeContent({ navigation }) {
             const x2 = (-valueB - Math.sqrt(delta)) / (2 * valueA);
             result = `x1 = ${x1}, x2 = ${x2}`;
         }
-        alert('ấdasds')
         // Gửi dữ liệu sang màn hình Result
         navigation.navigate('Result', { result });
     };
